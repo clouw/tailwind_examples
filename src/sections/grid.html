@@ -1,0 +1,202 @@
+<div class="group relative">
+  <h1>Grid</h1>
+  <div class="absolute top-0 left-0">
+    <small class="bg-white text-gray-900 p-1"
+      >Source | https://youtu.be/_r2qB44o_Fs</small
+    >
+  </div>
+
+  <div class="group__item">
+    <h1>grid grid-cols-(n)</h1>
+    <div class="box grid md:grid-cols-3">
+      <img class="w-full h-32 object-cover" src="../images/1.jpg" />
+      <img class="w-full h-32 object-cover" src="../images/2.jpg" />
+      <img class="w-full h-32 object-cover" src="../images/3.jpg" />
+      <img class="w-full h-32 object-cover" src="../images/4.jpg" />
+      <img class="w-full h-32 object-cover" src="../images/5.jpg" />
+      <img class="w-full h-32 object-cover" src="../images/6.jpg" />
+    </div>
+  </div>
+
+  <div class="group__item">
+    <h1>grid grid-cols-(n) with gap-(n)</h1>
+    <div class="box grid md:grid-cols-3 gap-2">
+      <img class="rounded w-full h-32 object-cover" src="../images/1.jpg" />
+      <img class="rounded w-full h-32 object-cover" src="../images/2.jpg" />
+      <img class="rounded w-full h-32 object-cover" src="../images/3.jpg" />
+      <img class="rounded w-full h-32 object-cover" src="../images/4.jpg" />
+      <img class="rounded w-full h-32 object-cover" src="../images/5.jpg" />
+      <img class="rounded w-full h-32 object-cover" src="../images/6.jpg" />
+    </div>
+  </div>
+</div>
+
+<div class="group relative">
+  <h1>Grid utilities</h1>
+
+  <div class="absolute top-0 left-0">
+    <small class="bg-white text-gray-900 p-1"
+      >Source | https://youtu.be/Gh5NhN7IBoE</small
+    >
+  </div>
+
+  <div class="group__item">
+    <h2>col-span-(n)</h2>
+
+    <div class="box grid grid-cols-3 gap-2">
+      <div class="bg-indigo-400 text-xs col-span-3">1 col-span-3</div>
+      <div class="bg-red-400">2</div>
+      <div class="bg-purple-400">3</div>
+      <div class="bg-indigo-400">4</div>
+      <div class="bg-red-400">5</div>
+      <div class="bg-purple-400 text-xs col-span-3">6 col-span-3</div>
+    </div>
+  </div>
+
+  <div class="group__item">
+    <h2>col-start-(n)</h2>
+
+    <div class="box grid grid-cols-3 gap-2">
+      <div class="bg-indigo-400 text-xs col-start-2">1 col-start-2</div>
+      <div class="bg-red-400 col-start-1">2 col-start-1</div>
+      <div class="bg-purple-400">3</div>
+      <div class="bg-indigo-400">4</div>
+      <div class="bg-red-400">5</div>
+      <div class="bg-purple-400 col-start-3">6 col-start-3</div>
+    </div>
+  </div>
+
+  <div class="group__item">
+    <h2>row-span-(n)</h2>
+
+    <div class="box grid grid-cols-3 grid-rows-2 gap-2">
+      <div class="bg-indigo-400 text-xs row-span-2">1 row-span-2</div>
+      <div class="bg-red-400">2</div>
+      <div class="bg-purple-400">3</div>
+      <div class="bg-indigo-400">4</div>
+      <div class="bg-red-400">5</div>
+    </div>
+  </div>
+</div>
+
+<div class="group relative">
+  <h1>Full Span</h1>
+
+  <div class="absolute top-0 left-0">
+    <small class="bg-white text-gray-900 p-1"
+      >Source | https://youtu.be/DVZvkFEzDOE</small
+    >
+  </div>
+
+  <div class="group__item">
+    <h2>col-span-full</h2>
+
+    <div class="box grid grid-cols-3 gap-2 w-64">
+      <div class="bg-indigo-400 col-span-full">1</div>
+      <div class="bg-red-400">2</div>
+      <div class="bg-purple-400">3</div>
+      <div class="bg-indigo-400">4</div>
+      <div class="bg-red-400">5</div>
+      <div class="bg-purple-400">6</div>
+      <div class="bg-indigo-400">7</div>
+      <div class="bg-red-400">8</div>
+      <div class="bg-purple-400">9</div>
+    </div>
+  </div>
+
+  <div class="group__item">
+    <h2>row-span-full</h2>
+
+    <div class="box grid grid-cols-3 grid-rows-4 gap-2 w-64">
+      <div class="bg-indigo-400 row-span-full">1</div>
+      <div class="bg-red-400">2</div>
+      <div class="bg-purple-400">3</div>
+      <div class="bg-indigo-400">4</div>
+      <div class="bg-red-400">5</div>
+      <div class="bg-purple-400">6</div>
+      <div class="bg-indigo-400">7</div>
+      <div class="bg-red-400">8</div>
+      <div class="bg-purple-400">9</div>
+    </div>
+  </div>
+
+  <div class="group__item">
+    <h2>auto-rows-fr</h2>
+
+    <div class="box grid grid-rows-2 auto-rows-fr gap-2 w-64">
+      <div class="bg-indigo-400 text-md">1</div>
+      <div class="bg-red-400 text-xs">2</div>
+      <div class="bg-purple-400 text-xs">3</div>
+      <div class="bg-indigo-400 text-md">4</div>
+      <div class="bg-red-400 text-xs">5</div>
+      <div class="bg-purple-400 text-xs">6</div>
+      <div class="bg-indigo-400 text-xs">7</div>
+      <div class="bg-red-400 text-xs">8</div>
+      <div class="bg-purple-400 text-xs">9</div>
+    </div>
+  </div>
+</div>
+
+<div class="group relative">
+  <h1>Grid flow</h1>
+  <div class="absolute top-0 left-0">
+    <small class="bg-white text-gray-900 p-1"
+      >Source | https://youtu.be/Gh5NhN7IBoE</small
+    >
+  </div>
+
+  <div class="group__item">
+    <h2>grid-flow-col grid-row-3</h2>
+
+    <div class="box grid grid-flow-col grid-rows-3">
+      <div class="bg-indigo-400">1</div>
+      <div class="bg-red-400">2</div>
+      <div class="bg-purple-400">3</div>
+      <div class="bg-indigo-400">4</div>
+      <div class="bg-red-400">5</div>
+      <div class="bg-purple-400">6</div>
+      <div class="bg-indigo-400">7</div>
+      <div class="bg-red-400">8</div>
+      <div class="bg-purple-400">9</div>
+    </div>
+  </div>
+</div>
+
+<div class="group">
+  <h1>Container element (.container)</h1>
+
+  <h2>Centered container</h2>
+  <div class="w-screen bg-blue-600 border border-gray-400">
+    <div class="container mx-auto bg-pink-300">
+      <div class="bg-indigo-400 w-40 h-20 p-2 m-2">1</div>
+      <div class="bg-indigo-400 w-40 h-20 p-2 m-2">2</div>
+      <div class="bg-indigo-400 w-40 h-20 p-2 m-2">3</div>
+    </div>
+  </div>
+</div>
+
+<div class="group relative">
+  <h1>Box Content</h1>
+
+  <div class="absolute top-0 left-0">
+    <small class="bg-white text-gray-900 p-1"
+      >Source | https://youtu.be/2gJuUldbiWA</small
+    >
+  </div>
+
+  <div class="group__item">
+    <h2>without box content</h2>
+
+    <div class="box w-64 h-40 p8">
+      <div class="bg-red-200 w-full h-full"></div>
+    </div>
+  </div>
+
+  <div class="group__item">
+    <h2>with box content</h2>
+
+    <div class="box box-content w-64 h-40 p8">
+      <div class="bg-red-200 w-full h-full"></div>
+    </div>
+  </div>
+</div>

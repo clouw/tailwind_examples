@@ -1,0 +1,74 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+@layer components {
+  /* Utilities */
+  hr {
+    @apply border-gray-700 border-t-2 border-dashed mt-8 mb-3;
+  }
+
+  /* Texts */
+  h2 {
+    @apply text-xl mb-2 text-gray-800;
+  }
+
+  /* Gropus */
+  .group {
+    @apply flex flex-row justify-center flex-wrap;
+    @apply bg-gray-200 border-green-200;
+    @apply p-4 my-4;
+  }
+
+  .group h1 {
+    @apply w-full text-center mb-2;
+    @apply text-2xl text-gray-900 text-center;
+    @apply my-2;
+  }
+
+  .group__item {
+    @apply p-6 bg-teal-100 m-1 border;
+  }
+
+  /* Box */
+  .box {
+    @apply p-2 bg-orange-200 border-gray-700 border-4;
+  }
+
+  .box__item {
+    @apply border-4 border-gray-700 bg-gray-300;
+    @apply m-2;
+    @apply text-center;
+
+    width: 50px;
+    line-height: 35px;
+  }
+
+  /* TABS */
+  .tabs {
+    @apply flex flex-row justify-center;
+    @apply mb-4;
+  }
+
+  screen .tabs__content {
+    @apply bg-purple-200 py-2 px-4 my-4;
+  }
+
+  /* Button */
+  button {
+    @apply bg-blue-700 text-white font-bold py-2 px-4 border-b-4 border-blue-700 rounded;
+    @apply mx-2;
+    @apply transition duration-500;
+  }
+
+  button:hover {
+    @apply border-blue-900;
+  }
+
+  button.active {
+    @apply bg-blue-900 border-blue-900;
+  }
+}

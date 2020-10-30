@@ -1,0 +1,132 @@
+<div class="group">
+  <h1>Space between</h1>
+
+  <div class="group__item">
+    <h2>Vertical Space</h2>
+
+    <div class="box flex space-x-2">
+      <div class="bg-pink-200 p-4 border border-gray-800">1</div>
+      <div class="bg-pink-200 p-4 border border-gray-800">2</div>
+      <div class="bg-pink-200 p-4 border border-gray-800">3</div>
+    </div>
+  </div>
+
+  <div class="group__item">
+    <h2>Horizontal Space</h2>
+
+    <div class="box flex flex-col space-y-2">
+      <div class="bg-pink-200 p-4 border border-gray-800">1</div>
+      <div class="bg-pink-200 p-4 border border-gray-800">2</div>
+      <div class="bg-pink-200 p-4 border border-gray-800">3</div>
+    </div>
+  </div>
+</div>
+
+<div class="group relative">
+  <h1>Gradient</h1>
+  <div class="absolute top-0 left-0">
+    <small class="bg-white text-gray-900 p-1"
+      >Source | https://youtu.be/1Rs5Kml8qMM</small
+    >
+  </div>
+
+  <div class="group__item flex flex-row space-x-4">
+    <div
+      class="w-40 h-20 rounded bg-pink-400 bg-gradient-to-r from-teal-500"
+    ></div>
+
+    <div
+      class="w-40 h-20 rounded bg-gradient-to-br from-teal-500 via-blue-500 to-green-300"
+    ></div>
+
+    <div
+      class="w-40 h-20 rounded bg-gradient-to-br from-teal-500 via-white-500 to-green-300"
+    ></div>
+  </div>
+
+  <div class="group__item">
+    <h2>With text</h2>
+
+    <p class="text-6xl font-black text-white text-center">
+      <span
+        class="bg-gradient-to-r text-transparent bg-clip-text from-purple-400 to-pink-500"
+      >
+        Gradients are Fantastic!
+      </span>
+    </p>
+  </div>
+</div>
+
+<div class="group relative">
+  <h1>Object</h1>
+
+  <div class="absolute top-0 left-0">
+    <small class="bg-white text-gray-900 p-1"
+      >Source |
+      https://tailwindcss.com/course/cropping-and-positioning-images</small
+    >
+  </div>
+
+  <div class="group__item">
+    <h1>object Cover center (default)</h1>
+    <div class="box space-y-2">
+      <img
+        class="rounded w-64 h-24 object-cover object-center"
+        src="../images/1.jpg"
+        alt=""
+      />
+      <img
+        class="rounded w-64 h-24 object-cover object-center"
+        src="../images/2.jpg"
+        alt=""
+      />
+      <img
+        class="rounded w-64 h-24 object-cover object-center"
+        src="../images/3.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+
+  <div class="group__item">
+    <h1>object Cover top</h1>
+    <div class="box space-y-2">
+      <img
+        class="rounded w-64 h-24 object-cover object-top"
+        src="../images/1.jpg"
+        alt=""
+      />
+      <img
+        class="rounded w-64 h-24 object-cover object-top"
+        src="../images/2.jpg"
+        alt=""
+      />
+      <img
+        class="rounded w-64 h-24 object-cover object-top"
+        src="../images/3.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+
+  <div class="group__item">
+    <h1>object Cover bottom</h1>
+    <div class="box space-y-2">
+      <img
+        class="rounded w-64 h-24 object-cover object-bottom"
+        src="../images/1.jpg"
+        alt=""
+      />
+      <img
+        class="rounded w-64 h-24 object-cover object-bottom"
+        src="../images/2.jpg"
+        alt=""
+      />
+      <img
+        class="rounded w-64 h-24 object-cover object-bottom"
+        src="../images/3.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+</div>

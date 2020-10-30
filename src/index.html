@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tailwind CSS Examples</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="font-sans">
+    <include src="partials/header.html"></include>
+
+    <div class="p-8" x-data="tabsScope()" x-init="handleInit">
+      <div class="tabs">
+        <template x-for="tab in tabs" :key="tab">
+          <button
+            class="capitalize"
+            :class="{ 'active': isActive(tab)}"
+            @click="handleClick(tab)"
+            x-text="tab"
+          ></button>
+        </template>
+      </div>
+
+      <div class="tabs__content" x-ref="container"></div>
+    </div>
+  </body>
+
+  <script src="/assets/js/index.js"></script>
+</html>
